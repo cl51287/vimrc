@@ -42,6 +42,8 @@ map N <Plug>(easymotion-prev)
 
 set ts=4
 
+set nu
+let g:solarized_termcolors=256
 
 syntax enable
 set background=dark
