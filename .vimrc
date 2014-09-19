@@ -29,7 +29,16 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 map <F2> :NERDTreeToggle<CR>
-map \ <Plug>(easymotion-prefix)
+
+" @EasyMotion Config Start
+map , <Plug>(easymotion-prefix)
+
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
+" @EasyMotion Config End
 
 set ts=4
 
