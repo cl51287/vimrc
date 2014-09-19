@@ -8,12 +8,10 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-easymotion'
-
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,9 +28,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+map <F2> :NERDTreeToggle<CR>
+map \ <Plug>(easymotion-prefix)
 
-map , <Plug>(easymotion-prefix)
+set ts=4
+
 
 syntax enable
 set background=dark
 colorscheme solarized
+
+set guifont=Ubuntu\ Mono\ 14
