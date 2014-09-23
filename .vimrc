@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim.git' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
