@@ -29,7 +29,12 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
 map <F2> :NERDTreeToggle<CR>
+map <c-q> :ls<CR>:b
 
 " @EasyMotion Config Start
 map , <Plug>(easymotion-prefix)
