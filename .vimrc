@@ -43,10 +43,12 @@ map N <Plug>(easymotion-prev)
 
 set ts=4
 
+set t_Co=256
+
 set nu
 let g:solarized_termcolors=256
 
-syntax enable
+syntax on
 set background=dark
 colorscheme solarized
 
