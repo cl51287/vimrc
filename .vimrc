@@ -1,3 +1,11 @@
+if has("gui_win32")
+	let $HOME='D:\home\chenlong\'
+endif
+
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -29,10 +37,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
-set encoding=utf-8
-
 map <F2> :NERDTreeToggle<CR>
 map <c-q> :ls<CR>:b
 
@@ -57,4 +61,12 @@ syntax on
 set background=dark
 colorscheme solarized
 
-set guifont=Ubuntu\ Mono\ 14
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Ubuntu\ Mono\ 13
+	elseif has("gui_win32")
+		set guifont=Ubuntu\ Mono:h13
+		au GUIEnter * simalt ~x
+	endif
+endif
+		
