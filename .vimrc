@@ -50,6 +50,11 @@ map n <Plug>(easymotion-next)
 map N <Plug>(easymotion-prev)
 " @EasyMotion Config End
 
+
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 set ts=4
 
 set t_Co=256
