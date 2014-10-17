@@ -21,6 +21,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim.git' 
+Plugin 'bling/vim-airline'
+Plugin 'Shougo/unite.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,9 +58,11 @@ if has("autocmd")
 endif
 
 set ts=4
+set smartindent
+set shiftwidth=4
+set backspace=2
 
 set t_Co=256
-set autochdir
 
 set nu
 let g:solarized_termcolors=256
