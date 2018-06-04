@@ -71,7 +71,10 @@ let g:solarized_termcolors=256
 
 syntax on
 set background=dark
-colorscheme solarized
+try
+	colorscheme solarized
+catch
+endtry
 
 if has("gui_running")
 	if has("gui_gtk2")
