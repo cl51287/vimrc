@@ -22,6 +22,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim.git' 
 Plugin 'bling/vim-airline'
+Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'Shougo/unite.vim'
 
 " All of your Plugins must be added before the following line
