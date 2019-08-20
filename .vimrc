@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'altercation/vim-colors-solarized'
-Plug 'kien/ctrlp.vim.git' 
+Plug 'kien/ctrlp.vim' 
 Plug 'bling/vim-airline'
 Plug 'fatih/vim-go'
 Plug 'Valloric/YouCompleteMe'
