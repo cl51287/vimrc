@@ -7,27 +7,24 @@ set termencoding=utf-8
 set encoding=utf-8
 
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim.git' 
-Plugin 'bling/vim-airline'
-Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
+call plug#begin('~/.vim/plugged')
+" alternatively, pass a path where Vundle should install plugins
+
+Plug 'scrooloose/nerdtree'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'altercation/vim-colors-solarized'
+Plug 'kien/ctrlp.vim.git' 
+Plug 'bling/vim-airline'
+Plug 'fatih/vim-go'
+Plug 'Valloric/YouCompleteMe'
+Plug 'tomasiser/vim-code-dark'
 "Plugin 'Shougo/unite.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -72,7 +69,7 @@ let g:solarized_termcolors=256
 syntax on
 set background=dark
 try
-	colorscheme solarized
+	colorscheme codedark
 catch
 endtry
 
