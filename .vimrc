@@ -19,7 +19,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim' 
 Plug 'bling/vim-airline'
 Plug 'fatih/vim-go'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'tomasiser/vim-code-dark'
 "Plugin 'Shougo/unite.vim'
 
