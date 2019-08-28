@@ -1,11 +1,22 @@
 #!/bin/sh
 
+mode=$1
 
-normalVimPlugs=(
-	"vim-go"
-	"ycm"
+normalVimModePlugs=(
 	"basic"
 )
+
+goVimModePlugs=(
+	"vim-go"
+	"ycm"
+)
+
+if [ "$mode" == "go" ]
+then       
+    plugs=$goVimModePlugs
+else
+    plugs=$normalVimModePlugs
+fi
 
 vimrcPath=.vimrc
 echo -n > $vimrcPath
@@ -13,7 +24,7 @@ echo -n > $vimrcPath
 cat 'header.vimrc' >> $vimrcPath
 
 
-for plug in ${normalVim[@]}
+for plug in ${plugs[@]}
 do
 	plugConfPath="$plug".vimrc
 	if [ -f "$plugConfPath" ]
@@ -23,3 +34,4 @@ do
 done
 
 cat 'footer.vimrc' >> $vimrcPath
+cat 'native.vimrc' >> $vimrcPath
