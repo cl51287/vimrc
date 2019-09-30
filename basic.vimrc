@@ -3,7 +3,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tomasiser/vim-code-dark'
 " Plug 'altercation/vim-colors-solarized'
-Plug 'fzf'
+Plug '/usr/bin/env fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 
