@@ -1,7 +1,9 @@
-#!/
+#!/usr/bin/env bash
 
 vimrcPath=$1
 mode=$2
+
+curPath=$(dirname $0)
 
 normalVimModePlugs=(
 	"basic"
@@ -22,7 +24,7 @@ fi
 
 echo -n > $vimrcPath
 
-cat 'header.vimrc' >> $vimrcPath
+cat "$curPath"/header.vimrc' >> $vimrcPath
 
 for plug in ${plugs[@]}
 do
@@ -33,5 +35,5 @@ do
 	fi
 done
 
-cat 'footer.vimrc' >> $vimrcPath
-cat 'native.vimrc' >> $vimrcPath
+cat "$curPath"/footer.vimrc >> $vimrcPath
+cat "$curPath"/native.vimrc >> $vimrcPath
