@@ -10,6 +10,7 @@ normalVimModePlugs=(
 )
 
 goVimModePlugs=(
+	"basic"
 	"vim-go"
 	"ycm"
 )
@@ -28,7 +29,7 @@ cat "$curPath"/header.vimrc >> $vimrcPath
 
 for plug in ${plugs[@]}
 do
-	plugConfPath="$plug".vimrc
+	plugConfPath="$curPath"/"$plug".vimrc
 	if [ -f "$plugConfPath" ]
 	then
 		cat "$plugConfPath" >> "$vimrcPath"
