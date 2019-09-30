@@ -24,7 +24,7 @@ fi
 
 echo -n > $vimrcPath
 
-cat "$curPath"/header.vimrc' >> $vimrcPath
+cat "$curPath"/header.vimrc >> $vimrcPath
 
 for plug in ${plugs[@]}
 do
