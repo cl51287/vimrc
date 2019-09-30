@@ -1,6 +1,7 @@
 #!/bin/sh
 
-mode=$1
+vimrcPath=$1
+mode=$2
 
 normalVimModePlugs=(
 	"basic"
@@ -18,11 +19,10 @@ else
     plugs=$normalVimModePlugs
 fi
 
-vimrcPath=.vimrc
+
 echo -n > $vimrcPath
 
 cat 'header.vimrc' >> $vimrcPath
-
 
 for plug in ${plugs[@]}
 do
