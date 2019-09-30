@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/
 
 vimrcPath=$1
 mode=$2
