@@ -8,11 +8,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 
 " @Nerdtree Config Start
-map <F2> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
 " @Nerdtree Config End
 
 " @EasyMotion Config Start
-map , <Plug>(easymotion-prefix)
+noremap , <Plug>(easymotion-prefix)
 " @EasyMotion Config End
 
 " Basic Plugin and Config End
+
+" @FZF Config Start
+nnoremap <c-p> :FZF<CR>
+" @FZF Config End
