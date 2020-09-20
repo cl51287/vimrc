@@ -6,6 +6,10 @@ normalVimModePlugs=(
 	"basic"
 )
 
+pythonVimModePlugs=(
+    "basic"
+)
+
 goVimModePlugs=(
 	"vim-go"
 	"ycm"
